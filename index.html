@@ -14,7 +14,6 @@
   --dark:#0f172a;
   --light:#f8fafc;
   --card:#ffffff;
-  --muted:#64748b;
 }
 
 *{box-sizing:border-box}
@@ -26,8 +25,6 @@ body{
   color:#1f2937;
   line-height:1.6;
 }
-
-a{text-decoration:none}
 
 .header{
   background:linear-gradient(135deg,#1e3a8a,#2563eb);
@@ -42,7 +39,7 @@ a{text-decoration:none}
 .contact-bar{
   display:flex;
   justify-content:center;
-  gap:30px;
+  gap:24px;
   flex-wrap:wrap;
   margin-top:25px;
 }
@@ -52,17 +49,13 @@ a{text-decoration:none}
   align-items:center;
   gap:10px;
   background:rgba(255,255,255,0.15);
-  padding:10px 16px;
+  padding:10px 18px;
   border-radius:30px;
   font-size:15px;
 }
 
+.contact-item a{color:#fff;text-decoration:none}
 .contact-item i{color:#bfdbfe}
-
-.contact-item a{
-  color:#ffffff;
-  font-weight:500;
-}
 
 .container{
   max-width:1100px;
@@ -92,9 +85,7 @@ a{text-decoration:none}
   transition:.25s;
 }
 
-.card:hover{
-  transform:translateY(-6px);
-}
+.card:hover{transform:translateY(-6px)}
 
 .card h3, .card p, .card li{color:#0f172a}
 
@@ -140,12 +131,10 @@ footer{
       <i class="fa-solid fa-envelope"></i>
       <a href="mailto:gopipasam93@gmail.com">gopipasam93@gmail.com</a>
     </div>
-
     <div class="contact-item">
       <i class="fa-solid fa-phone"></i>
       <a href="tel:+917702803362">+91 7702803362</a>
     </div>
-
     <div class="contact-item">
       <i class="fa-brands fa-linkedin"></i>
       <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME" target="_blank">
@@ -162,8 +151,8 @@ footer{
   <h2>About Me</h2>
   <div class="card">
     Final-year B.Tech (AI & ML) student with strong hands-on experience in data cleaning,
-    preprocessing, and exploratory data analysis using Python. Passionate about converting
-    raw datasets into actionable insights and building real-world data applications.
+    preprocessing, and exploratory data analysis using Python. Passionate about transforming
+    raw data into actionable insights and building real-world data solutions.
   </div>
 </section>
 
@@ -174,6 +163,41 @@ footer{
     <span>Python</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span>
     <span>SQLite</span><span>Streamlit</span><span>Excel</span>
     <span>EDA</span><span>Data Cleaning</span>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section">
+  <h2>Projects</h2>
+  <div class="grid">
+
+    <div class="card">
+      <h3>Data Cleaning & Preprocessing Web Application</h3>
+      <ul>
+        <li>Built interactive Streamlit app for dataset cleaning</li>
+        <li>Automated missing values, duplicate removal, and IQR-based outlier detection</li>
+        <li>Enabled real-time upload, transform, and export</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>PDF-Based Financial Data Analysis System</h3>
+      <ul>
+        <li>Extracted structured data from financial PDF documents</li>
+        <li>Analyzed financial metrics and generated reports</li>
+        <li>Automated insights for decision-making</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Exploratory Data Analysis on Real-World Datasets</h3>
+      <ul>
+        <li>Performed EDA using Pandas and Matplotlib</li>
+        <li>Identified trends, anomalies, and data quality issues</li>
+        <li>Presented insights through visualizations</li>
+      </ul>
+    </div>
+
   </div>
 </section>
 
@@ -196,6 +220,16 @@ footer{
       <a href="skilldizer-internship.pdf" target="_blank">🔗 View Certificate</a>
     </div>
 
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="section">
+  <h2>Education</h2>
+  <div class="card">
+    <strong>B.Tech – Artificial Intelligence & Machine Learning</strong><br>
+    Bapatla Engineering College<br>
+    CGPA: 8.0 · Expected 2026
   </div>
 </section>
 
