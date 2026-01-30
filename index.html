@@ -17,6 +17,7 @@
 }
 
 *{box-sizing:border-box}
+
 body{
   margin:0;
   font-family:Inter,system-ui;
@@ -29,13 +30,13 @@ a{color:var(--primary);text-decoration:none;font-weight:600}
 
 .hero{
   background:linear-gradient(135deg,#1e3a8a,#2563eb);
-  color:#fff;
+  color:#ffffff;
   padding:90px 20px;
   text-align:center;
 }
 
 .hero h1{font-size:44px;margin:0}
-.hero p{margin:10px 0;font-size:18px;opacity:.95}
+.hero p{margin:10px 0;font-size:18px}
 
 .container{
   max-width:1100px;
@@ -70,6 +71,11 @@ a{color:var(--primary);text-decoration:none;font-weight:600}
   box-shadow:0 18px 40px rgba(0,0,0,.1);
 }
 
+/* 🔥 FIX FOR INVISIBLE TEXT */
+.card h3, .card p, .card li { 
+  color:#0f172a; 
+}
+
 .skills span{
   display:inline-block;
   background:#eef2ff;
@@ -88,7 +94,7 @@ a{color:var(--primary);text-decoration:none;font-weight:600}
   border-radius:999px;
   font-size:13px;
   font-weight:600;
-  margin-bottom:10px;
+  margin-bottom:12px;
 }
 
 footer{
@@ -122,8 +128,8 @@ footer{
   <div class="card">
     Final-year B.Tech (AI & ML) student with strong hands-on experience in
     data cleaning, preprocessing, and exploratory data analysis using Python.
-    Passionate about transforming raw data into actionable business insights
-    and building practical data applications.
+    Passionate about converting raw data into actionable insights and
+    building real-world data applications.
   </div>
 </section>
 
@@ -175,7 +181,7 @@ footer{
     <div class="card">
       <h3>Data Cleaning & Preprocessing Web App</h3>
       <p>
-        Interactive Streamlit application to clean datasets with automated
+        Streamlit-based application to clean datasets using automated
         missing value handling, duplicate removal, and IQR-based outlier detection.
       </p>
     </div>
@@ -183,16 +189,16 @@ footer{
     <div class="card">
       <h3>PDF-Based Financial Data Analysis</h3>
       <p>
-        Extracted structured data from financial PDFs, analyzed metrics,
-        and generated automated analytical reports.
+        Extracted structured financial data from PDFs and generated
+        automated analytical reports.
       </p>
     </div>
 
     <div class="card">
       <h3>Exploratory Data Analysis</h3>
       <p>
-        Performed EDA on real-world datasets to identify trends,
-        anomalies, and data quality issues using visualizations.
+        Conducted EDA on real-world datasets to identify trends,
+        anomalies, and data quality issues.
       </p>
     </div>
 
@@ -215,3 +221,31 @@ footer{
 
     <div class="card">
       <span class="badge">Verified</span>
+      <h3>Machine Learning Internship</h3>
+      <p>Skilldizer</p>
+      <a href="certificates/skilldizer-internship.pdf" target="_blank">
+        🔗 View Certificate
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="section">
+  <h2>Education</h2>
+  <div class="card">
+    <strong>B.Tech – Artificial Intelligence & Machine Learning</strong><br>
+    Bapatla Engineering College<br>
+    CGPA: 8.0 · Expected 2026
+  </div>
+</section>
+
+</div>
+
+<footer>
+  © 2026 Gopi Chand Pasam · Data Analyst Portfolio
+</footer>
+
+</body>
+</html>
